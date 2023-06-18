@@ -1,0 +1,212 @@
+body {
+    color: white;
+    background: black;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;;
+}
+
+.navbar {
+    width: 80%;
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.logo-container .logo {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    padding: 10ox 20px;
+    border-radius: 20px;
+    transition-duration: .5s;
+}
+
+
+
+img {  
+    max-width: 750px;  
+    height: auto;  
+   
+}  
+
+
+.logo-container .logo:hover {
+    border: 1px solid white;
+}
+
+.items-container .items{
+    display: flex;
+}
+
+.items .item {
+    list-style: none;
+}
+
+.item-link {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    padding: 10px 30px;
+    background-color: black;
+    border-radius: 20px;
+    transition-duration: .3s;
+}
+
+.item-link:hover, .active{
+    color: black;
+    background: white;
+}
+
+.container {
+    width: 70%;
+    display: flex;
+    margin: 5rem auto;
+}
+
+.illustration {
+    width: 100%;
+}
+
+.info {
+    width: 60%;
+    margin-top: 6rem;
+}
+
+.info .subtitle {
+    font-size: 10px;
+    display: block;
+}
+
+.info h1 {
+    font-size: 3.5rem;
+    margin: 10px 0;
+}
+
+.btn {
+    color: black;
+    background-color: white;
+    padding: 10px 40px;
+    border-radius: 40px;
+    font-size: 20px;
+    margin-top: 20px;
+    border: 1px solid transparent;
+    font-weight: bold;
+    transition-duration: .3s;
+}
+.btn2 {
+    color: black;
+    background-color: white;
+    padding: 10px 40px;
+    border-radius: 40px;
+    font-size: 20px;
+    margin-top: 20px;
+    border: 1px solid transparent;
+    font-weight: bold;
+    position: absolute;
+    transition-duration: .3s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: black;
+    color: white;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 1000px){
+    .container {
+        display: block;
+        text-align: center;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .navbar {
+        display: block;
+        height: auto;
+        text-align: center;
+        padding: 20px 10px;
+    }
+     .items {
+        text-align: center;
+        height: auto;
+        justify-content: center;
+     }
+}
+
+@media screen and (max-width: 600px){
+    .container {
+        margin-top: 0;
+    }
+
+    .info {
+        margin-top: 1rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .items .item {
+        overflow: hidden;
+        margin: 10px;
+    }
+
+    .item-link:hover .active {
+        display: inline-block;
+        margin: 0;
+    }
+}
+
+.login-form {
+    width: 350px;
+    top: 49%;
+    left: 25.5%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: white;
+    margin: 0 auto;
+    margin-top: 2rem;
+
+}
+
+.login-form p {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.login-form input {
+    width: 100%;
+    font-size: 16px;
+    padding: 15px 10px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+}
+
+.login-form button {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    width: 50%;
+    border-radius: 5px;
+    border: 0;
+}
+
+.login-form .button:hover {
+    cursor: pointer;
+    background: black;
+    color: white;
+    border: 1px solid black;
+}
